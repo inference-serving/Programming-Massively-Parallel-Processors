@@ -45,13 +45,16 @@ int main(int argc, char* argv[]){
     unsigned char* h_input_image, *h_output_image;
     unsigned char* d_input_image, *d_output_image;
 
-    if(argc != 4){
-        printf("Usage: %s <block_dim> <image_width> <image_height>\n", argv[0]);
-        return 1;
-    }
-    block_dim = atoi(argv[1]);
-    image_width = atoi(argv[2]);
-    image_height = atoi(argv[3]);
+    // if(argc != 4){
+    //     printf("Usage: %s <block_dim> <image_width> <image_height>\n", argv[0]);
+    //     return 1;
+    // }
+    // block_dim = atoi(argv[1]);
+    // image_width = atoi(argv[2]);
+    // image_height = atoi(argv[3]);
+    block_dim = 32;
+    image_width = 10;
+    image_height = 10;
     size = image_width * image_height;
 
     // Allocate memory for the input and output images on host
